@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .tue{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    padding: 40px;
+ }
+ .mon{
+    background-color: pink;
+    padding: 20px;
+    transition: 0.4s;
+ }
+ .mon img{
+    width: 100%;
+    
+ }
+ button{
+    width: 100%;
+ }
+ .mon:hover{
+    background-color: yellow;
+    transform: scale(1.3);
+ }
+ h1{
+    text-align: center;
+ }
+h1::after{
+    content: "****";
+}

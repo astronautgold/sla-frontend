@@ -1,0 +1,57 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+   height: 60px;
+  
+}
+.nav div{
+   display: flex;
+   justify-content: center;
+ gap: 10px;
+   align-items: center;
+   padding: 0 20px;
+  
+   transition: 1.0s;
+}
+.a1:hover{
+    background-color: yellow;
+    transform: scale(1.2);
+}
+.a2:hover{
+    background-color: yellow;
+    transform: rotate(90deg);
+}
+.a3:hover{
+    background-color: yellow;
+    transform: skew(10deg);
+}
+
+@media (max-width:768px){
+    .nav{
+        
+        flex-direction: column;
+       justify-content: space-between; /* pushes items apart */
+align-items: start;
+
+
+
+
+    }
+    .nav div{
+      
+        flex-direction: column;
+        margin-top: 10px;
+     align-items: start;
+     
+    }
+  
+}
+
+
+

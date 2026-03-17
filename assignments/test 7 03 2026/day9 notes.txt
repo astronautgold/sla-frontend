@@ -1,0 +1,227 @@
+1. What is HTML? Why is it used in web development?
+
+HTML (HyperText Markup Language) is the standard language used to create web pages.
+
+It is used to structure the content of a website.
+
+With HTML we can create:
+
+Headings, Paragraphs, Images, Links, Tables, Forms
+
+Browsers read HTML and display the content on the screen.
+
+2. What is the purpose of <!DOCTYPE html>? Why is it important?
+
+<!DOCTYPE html> tells the browser that the document is written in HTML5.
+
+It helps the browser render the page correctly.
+
+Without it, the browser may go into quirks mode and display the page incorrectly.
+
+3. Difference between Tags and Elements
+Tag
+
+A tag is the markup keyword inside angle brackets.
+
+Example:
+
+<p>
+</p>
+Element
+
+An element includes the opening tag + content + closing tag.
+
+Example:
+
+<p>This is a paragraph</p>
+
+4. What are Semantic Elements?
+
+Semantic elements clearly describe the meaning of the content.
+
+They help:
+
+Developers understand the structure
+
+Search engines understand the page
+
+Improve accessibility
+
+Examples:
+
+<header>,<article>,<footer>,<section>,<nav>
+
+5. What are Non-Semantic Elements?
+
+Non-semantic elements do not describe the meaning of the content.
+
+They are mainly used for layout or styling.
+
+Examples:
+
+<div>
+<span>
+
+6. Difference between <b> and <strong>
+Tag	Meaning	Purpose
+<b>	Bold text	Only visual styling
+<strong>	Important text	Shows importance (semantic meaning)
+
+Example:
+
+<b>Bold text</b>
+
+<strong>Important text</strong>
+
+7.Purpose of <a> Tag
+
+The <a> tag is used to create hyperlinks.
+
+It connects one page to another.
+
+Example:
+
+<a href="https://google.com">Visit Google</a>
+
+8. Four Input Types in HTML Forms
+
+Examples:
+
+text
+password
+email
+number
+
+Example:
+
+<input type="text">
+<input type="password">
+<input type="email">
+<input type="number">
+
+9. Purpose of <video> and <audio> Tags
+
+They are used to embed media files in a webpage.
+
+Video Example
+<video controls>
+<source src="movie.mp4">
+</video>
+Audio Example
+<audio controls>
+<source src="music.mp3">
+</audio>
+controls attribute
+
+10. Purpose of Meta Tags
+
+<meta> tags provide information about the webpage.
+
+They are placed inside the <head> section.
+
+Uses: Character encoding, Page description, Keywords, Author, Responsive design
+
+Example:
+
+<meta name="description" content="Learning HTML">
+11. What does UTF-8 mean in <meta charset="UTF-8">?
+
+UTF-8 is a character encoding standard.
+
+It allows the webpage to display all types of characters like:
+
+English, Tamil, Hindi, Chinese, Symbols
+
+Example:
+
+<meta charset="UTF-8">
+
+Without this, some characters may display incorrectly.
+
+12. What is CSS? Why do we use CSS?
+
+CSS (Cascading Style Sheets) is used to style and design web pages.
+
+HTML → structure
+CSS → appearance
+
+CSS controls: Colors, Fonts, Spacing, Layout, Animations
+
+Example:
+
+h1 {
+color: blue;
+}
+13. What are CSS Selectors?
+
+CSS selectors are used to select HTML elements and apply styles.
+
+Example:
+
+p {
+color: red;
+}
+Three Types of Selectors
+
+Element Selector
+
+p {
+color: blue;
+}
+
+Class Selector
+
+.box {
+background: yellow;
+}
+
+ID Selector
+
+#header {
+font-size: 30px;
+}
+14. What is CSS Cascading?
+
+Cascading means priority of styles.
+
+If multiple styles apply to the same element, the browser decides which one wins.
+
+Priority example:
+
+Inline CSS  >  Internal CSS  >  External CSS
+
+15 CSS Box Model
+
+Every HTML element is treated like a box.
+
+The box model has four parts:
+
+Margin
+Border
+Padding
+Content
+Structure
+Margin
+    Border
+       Padding
+         Content
+Example
+div {
+width:200px;
+padding:20px;
+border:5px solid black;
+margin:30px;
+}
+Components
+
+Content
+The actual text or image.
+
+Padding
+Space between content and border.
+
+Border
+Line around the padding.
+
+Margin
+Space outside the border.

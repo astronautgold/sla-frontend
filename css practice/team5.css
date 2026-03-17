@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    height: 60px;
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: blueviolet;
+}
+.nav .home a{
+    padding: 20px;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: aliceblue;
+}
+button{
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: skyblue;
+}
+.nav .home{
+
+  padding: 40px;
+}
+.nav img{
+    width: 120px;
+    height:60px;
+    padding: 10px; 
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+   
+}
+.child{
+ 
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 1.3s;
+}
+.child img{
+   
+    border-radius: 30px;
+}
+.banner img{
+    width: 100%;
+     padding: 40px;
+     height: 500px;
+}
+.child:hover{
+    transform: scale(1.1);
+}

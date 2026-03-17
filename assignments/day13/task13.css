@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+     display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.btn{
+    background-color: skyblue;
+    border-radius: 10px;
+  width: 150px;
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+    justify-content: center;
+
+}
+.btn:hover{
+    background-color: orange;
+    transition: 1.0s;
+}
+.image img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    transition: 1.0s;
+}
+.image{
+     display: flex;
+    justify-content: center;
+}
+.image img:hover{
+    transform: scale(1.3);
+}
+.bt{
+        display: flex;
+    justify-content: center;
+}
+.trans{
+     display: flex;
+    justify-content: center;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.first p::first-letter{
+    font-size: 40px;
+    color: red;
+    
+}
+.after{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.after p::after{
+    content: "🔥";
+}
+.card{
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: 0.4s;
+     text-align: center;
+}
+.card p{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    padding: 80px;
+   
+}
+.card p:hover{
+transform: translateY(-10px);
+box-shadow: 2px lightgrey;
+}

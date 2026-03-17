@@ -1,0 +1,238 @@
+1. Difference Between a Tag and an Element
+
+Tag → The keyword inside angle brackets.
+Example: <p>
+
+Element → The complete structure including opening tag, content, and closing tag.
+Example:
+
+<p>Hello World</p>
+
+Here:
+
+<p> → Opening tag
+
+</p> → Closing tag
+
+Entire thing → Element
+
+2. What Are Block-Level Elements?
+
+Block-level elements:
+Start on a new line
+Take full width available
+Can contain other block and inline elements
+
+Examples:
+
+<div>,<p>,<section>
+
+Behavior Example:
+<p>This is paragraph one.</p>
+<p>This is paragraph two.</p>
+
+Each paragraph appears on a new line automatically.
+
+3. What Are Inline Elements?
+
+Inline elements:
+Do not start on a new line
+Take only the required width
+Cannot contain block elements (normally)
+
+Examples:<span>,<a>,<strong>
+
+Difference:
+Block-Level	                  Inline
+New line	                Same line
+Full width	                Only content width
+Can contain block elements	Usually cannot
+
+4. What Happens If You Apply Width & Height to Inline Elements?
+
+Normally:
+
+width and height do not work properly ,because inline elements do not respect box dimensions
+
+Example:
+
+<span style="width:200px; height:100px; background:red;">
+Text
+</span>
+
+It won’t behave like a box.
+
+Why?
+Because inline elements flow inside text and don’t form block boxes.
+
+If you want width/height to work:
+
+display: inline-block;
+
+5. Semantic vs Non-Semantic Elements
+Semantic Elements
+
+They describe meaning of content.
+
+Examples:
+
+<header>,<article>,<section>
+
+They help:
+
+SEO,Screen readers,Structure clarity.
+
+Non-Semantic Elements
+
+They don’t describe meaning.
+
+Examples:
+
+<div>,<span>
+
+Used mainly for styling or grouping.
+
+6. Why <header> Is Better Than <div>
+
+<header> tells the browser:
+
+This is the header section of the page.
+
+<div> tells nothing about meaning.
+
+So:
+
+Better for SEO
+
+Better for accessibility
+
+Better for structured layout
+
+7. Difference Between <b> and <strong>
+
+<b> → Just makes text bold (visual only)
+
+<strong> → Indicates important content (semantic meaning + bold by default)
+
+Search engines understand <strong> as important.
+
+8. Difference Between <i> and <em>
+
+<i> → Italic text (visual only)
+
+<em> → Emphasized text (semantic importance + italic by default)
+
+Screen readers give stress to <em>.
+
+9. When to Use <mark> and <small>
+<mark>
+
+Used to highlight text.
+
+Example:
+
+Your exam is on <mark>Monday</mark>.
+
+Real-time use:
+
+Highlight search results
+
+Important notice
+
+<small>
+
+Used for secondary information.
+
+Example:
+
+<small>Terms and conditions apply.</small>
+
+Real-time use:
+
+Copyright text
+
+Disclaimer
+
+Legal notes
+
+10. Purpose of <a> Tag
+
+Used to create hyperlinks.
+
+It connects:
+
+One page to another
+
+One section to another
+
+External websites
+
+Example:
+
+<a href="https://example.com">Visit Website</a>
+11. Mandatory Attribute in <a>
+
+href is required.
+
+Without href:
+
+<a>Click Me</a>
+
+It will not act as a link.
+It becomes just normal text.
+
+12.Difference Between target="_blank" and target="_self"
+
+_blank → Opens link in new tab
+_self → Opens link in same tab (default)
+
+Example:
+
+<a href="page.html" target="_blank">Open in New Tab</a>
+13. Can <a> Wrap Block-Level Elements?
+
+Yes. In HTML5, it is allowed.
+
+Example:
+
+<a href="#">
+  <div>
+    <h2>Click This Card</h2>
+  </div>
+</a>
+
+HTML5 allows block elements inside <a>.
+
+14. Block Element Inside Inline Element
+
+Example:
+
+<span>
+  <div>Text</div>
+</span>
+
+This is invalid HTML structure.
+
+Inline elements should not contain block-level elements.
+
+Even though browsers may render it, it is structurally wrong.
+
+15. Small HTML Snippet
+
+Includes:
+
+One semantic tag
+
+One non-semantic tag
+
+One formatting tag
+
+One <a> tag
+
+<section>
+  <div>
+    <strong>Welcome to Space Technology</strong>
+    <p>Learn more about rockets and satellites.</p>
+    <a href="https://nasa.gov" target="_blank">Visit NASA</a>
+  </div>
+</section>

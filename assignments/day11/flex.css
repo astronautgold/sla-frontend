@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.product{
+display: flex;
+justify-content: space-between;
+gap: 20px;
+padding: 10px;
+}
+
+.child{
+display: flex;
+flex-direction: column;
+border: 1px solid;
+width: 250px;
+}
+
+.child img{
+  height: 130px; /* Set a specific height */
+  width: 100px;
+  padding: 10px;
+  align-self: center;
+ 
+}
+.child button{
+    background-color: skyblue;
+    border-radius: 20px;
+}
+h4{
+   
+    margin: 5px 0;
+}
+p{
+margin: 5px 0;
+}
+.gallery{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 20px;
+}
+
+.gallery img{
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+}
