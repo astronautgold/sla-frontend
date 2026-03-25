@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
-
   <title>FuelGO</title>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar-custom px-4 py-3 d-flex justify-content-between align-items-center">
-  
-  <!-- Logo -->
-  <img src="assests/logo.png" alt="logo" class="logo"/>
-
-  <!-- Links -->
-  <div class="nav-links d-flex align-items-center">
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar-custom px-4 py-3 d-flex justify-content-between align-items-center sticky-top">
+  <div class="logo-wrap d-flex align-items-center gap-2">
+    <img src="assests/logo.png" alt="logo" class="logo" onerror="this.style.display='none'"/>
+    <span class="logo-text">Fuel<span>GO</span></span>
+  </div>
+  <div class="nav-links d-flex align-items-center flex-wrap gap-1">
     <a href="#">Home</a>
     <a href="#">Services</a>
     <a href="#">How It Works</a>
@@ -28,113 +26,440 @@
     <a href="#">Track Order</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
-
-    <button class="btn btn-outline-light ms-3">Login</button>
-    <button class="btn btn-light ms-2">Signup</button>
-    <button class="btn btn-warning ms-2">Book Now</button>
+    <button class="btn btn-outline-light ms-2">Login</button>
+    <button class="btn btn-light ms-1">Signup</button>
+    <button class="btn btn-warning ms-1 fw-bold">⚡ Book Now</button>
   </div>
 </nav>
 
-<!-- Hero Banner -->
-<section class="hero text-center">
-  <img src="assests/1.png" class="img-fluid hero-img" alt="banner"/>
-</section>
-
-<!-- Location Section -->
-<section class="container text-center mt-5">
-  <h5 class="mb-3">Enter your location to check service availability</h5>
-
-  <div class="location-box d-flex justify-content-center align-items-center">
-    <input type="text" placeholder="📍 Detect My Location"/>
-    <span class="mx-3">or</span>
-    <input type="text" placeholder="Type area / pincode"/>
+<!-- ===================== HERO ===================== -->
+<section class="hero text-center position-relative">
+  <img src="assests/1.png" class="img-fluid hero-img w-100" alt="banner"
+      />
+  <div class="hero-overlay">
+    <h1 class="hero-title">Fuel & Mechanic Services<br><span>Delivered to Your Doorstep</span></h1>
+    <p class="hero-sub">Out of fuel? Car broke down? We reach you in <strong>30 minutes</strong>. Available 24/7.</p>
+    <div class="hero-btns d-flex justify-content-center gap-3 flex-wrap">
+      <button class="btn btn-warning btn-lg fw-bold px-4">⛽ Order Fuel Now</button>
+      <button class="btn btn-outline-light btn-lg px-4">🔧 Call a Mechanic</button>
+    </div>
+    <div class="trust-bar d-flex justify-content-center gap-4 flex-wrap mt-4">
+      <span>⭐ 4.9 Rating</span>
+      <span>👨‍🔧 500+ Mechanics</span>
+      <span>🏙️ 20+ Cities</span>
+      <span>✅ 50,000+ Orders</span>
+    </div>
   </div>
 </section>
 
-<!-- Services Heading -->
+<!-- ===================== LOCATION ===================== -->
+<section class="container text-center mt-5">
+  <h5 class="mb-3 fw-semibold">Enter your location to check service availability</h5>
+  <div class="location-box d-flex justify-content-center align-items-center flex-wrap gap-2">
+    <input type="text" placeholder="📍 Detect My Location" class="loc-input"/>
+    <span class="text-muted fw-bold">or</span>
+    <input type="text" placeholder="Type area / pincode" class="loc-input"/>
+    <button class="btn btn-warning fw-bold px-4">Check Now →</button>
+  </div>
+</section>
+
+<!-- ===================== SERVICE CATEGORIES ===================== -->
 <section class="text-center mt-5">
-  <h2 class="fw-bold">What Do You Need Today?</h2>
+  <h2 class="fw-bold section-title">What Do You Need Today?</h2>
   <p class="text-muted">Choose a category to explore all services</p>
 </section>
 
-<!-- Service Cards -->
-<section class="container mt-4">
+<section class="container mt-4 pb-3">
   <div class="row text-center g-4">
-
     <div class="col-md-3">
       <div class="service-card">
-        <img src="assests/2 (1).png"/>
+        <div class="card-icon-wrap"><img src="assests/2 (1).png" onerror="this.parentElement.innerHTML='⛽'"/></div>
         <h5>Fuel Delivery</h5>
-        <p>Petrol, Diesel</p>
+        <p>Petrol, Diesel, CNG, Emergency</p>
+        <a href="#" class="explore-btn">Explore →</a>
       </div>
     </div>
-
     <div class="col-md-3">
       <div class="service-card">
-        <img src="assests/3.png"/>
-        <h5>Mechanic</h5>
-        <p>Breakdown help</p>
+        <div class="card-icon-wrap"><img src="assests/3.png" onerror="this.parentElement.innerHTML='🔧'"/></div>
+        <h5>Mechanic & Roadside</h5>
+        <p>Breakdown, Oil Change, Tyres</p>
+        <a href="#" class="explore-btn">Explore →</a>
       </div>
     </div>
-
     <div class="col-md-3">
       <div class="service-card">
-        <img src="assests/4.png"/>
-        <h5>Battery</h5>
-        <p>Jump start</p>
+        <div class="card-icon-wrap"><img src="assests/4.png" onerror="this.parentElement.innerHTML='🚗'"/></div>
+        <h5>Vehicle Care</h5>
+        <p>Car Wash, Fluid Top-ups, AMC</p>
+        <a href="#" class="explore-btn">Explore →</a>
       </div>
     </div>
-
     <div class="col-md-3">
       <div class="service-card">
-        <img src="assests/5.png"/>
-        <h5>Tyre Service</h5>
-        <p>Puncture repair</p>
+        <div class="card-icon-wrap"><img src="assests/5.png" onerror="this.parentElement.innerHTML='🏢'"/></div>
+        <h5>Business & Fleet</h5>
+        <p>Bulk Fuel, B2B Plans, Fleet</p>
+        <a href="#" class="explore-btn">Explore →</a>
       </div>
     </div>
-
   </div>
 </section>
-<section class="text-center mt-5">
-  <h2 class="fw-bold">Get Help in 4 Simple Steps</h2>
-  <p class="text-muted">Fast, easy and right at your location</p>
-</section>
-<section class="container mt-4">
-  <div class="row text-center g-4">
 
-    <div class="col-md-3">
-      <div class="service-card">
-        <img src="assests/7 (1).png"/>
-        <h5>Step 1</h5>
-        <p>Choose your Service</p>
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="how-section mt-5 py-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold section-title">Get Help in 4 Simple Steps</h2>
+    <p class="text-muted">Fast, easy and right at your location</p>
+  </div>
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="card-icon-wrap"><img src="assests/7 (1).png" onerror="this.parentElement.innerHTML='📍'"/></div>
+          <h5>Choose Service</h5>
+          <p>Select what you need from our services</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="card-icon-wrap"><img src="assests/7 (2).png" onerror="this.parentElement.innerHTML='🛠️'"/></div>
+          <h5>Enter Location</h5>
+          <p>Share your GPS or type your address</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="card-icon-wrap"><img src="assests/8 (1).png" onerror="this.parentElement.innerHTML='🚐'"/></div>
+          <h5>We Dispatch</h5>
+          <p>Technician dispatched instantly to you</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="card-icon-wrap"><img src="assests/8 (2).png" onerror="this.parentElement.innerHTML='✅'"/></div>
+          <h5>Job Done!</h5>
+          <p>Service complete — pay & rate us</p>
+        </div>
       </div>
     </div>
-
-    <div class="col-md-3">
-      <div class="service-card">
-        <img src="assests/7 (2).png"/>
-        <h5>Step 2</h5>
-        <p> Enter Your Location</p>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="service-card">
-        <img src="assests/8 (1).png"/>
-        <h5>Step 3</h5>
-        <p> We Dispatch Instantly</p>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="service-card">
-        <img src="assests/8 (2).png"/>
-        <h5>Step 4</h5>
-        <p>Job Done!Pay & Rate</p>
-      </div>
-    </div>
-
   </div>
 </section>
+
+<!-- ===================== POPULAR SERVICES ===================== -->
+<section class="container mt-5 pt-3">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold section-title">Most Popular Services</h2>
+    <p class="text-muted">Trusted by thousands of customers daily</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="popular-card">
+        <div class="popular-top">🆘</div>
+        <div class="popular-body">
+          <h6 class="fw-bold">Emergency Fuel</h6>
+          <div class="stars">★★★★★ <span>4.9</span></div>
+          <p class="price">From ₹99</p>
+          <button class="btn btn-dark w-100 btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="popular-card">
+        <div class="popular-top">🔧</div>
+        <div class="popular-body">
+          <h6 class="fw-bold">Oil Change</h6>
+          <div class="stars">★★★★★ <span>4.8</span></div>
+          <p class="price">From ₹299</p>
+          <button class="btn btn-dark w-100 btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="popular-card">
+        <div class="popular-top">⛽</div>
+        <div class="popular-body">
+          <h6 class="fw-bold">Petrol Delivery</h6>
+          <div class="stars">★★★★★ <span>4.9</span></div>
+          <p class="price">From ₹49</p>
+          <button class="btn btn-dark w-100 btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="popular-card">
+        <div class="popular-top">🔋</div>
+        <div class="popular-body">
+          <h6 class="fw-bold">Battery Replacement</h6>
+          <div class="stars">★★★★☆ <span>4.7</span></div>
+          <p class="price">From ₹499</p>
+          <button class="btn btn-dark w-100 btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="why-section mt-5 py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold section-title text-white">Why Thousands Trust FuelGO</h2>
+      <p style="color:#A0B0C8;">We are not just a service — we are your roadside partner</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h6 class="fw-bold">30-Min Guaranteed Arrival</h6>
+          <p>We reach you faster than anyone else, guaranteed or your money back</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h6 class="fw-bold">Licensed & Verified Technicians</h6>
+          <p>Every mechanic is background-checked, certified and uniformed</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">💳</div>
+          <h6 class="fw-bold">Transparent Pricing</h6>
+          <p>No hidden charges. Pay only what you see before confirming the booking</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">📍</div>
+          <h6 class="fw-bold">Real-Time Live Tracking</h6>
+          <p>Watch your technician travel to you live on the map with ETA updates</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">🕐</div>
+          <h6 class="fw-bold">24/7 Availability</h6>
+          <p>Day or night, weekday or holiday — we are always on call for you</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <div class="why-icon">🔁</div>
+          <h6 class="fw-bold">Easy Rescheduling</h6>
+          <p>Flexible bookings with free cancellation up to 15 minutes before service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APP DOWNLOAD ===================== -->
+<section class="app-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2 class="fw-bold text-white mb-2">Faster Booking on the App</h2>
+        <p class="mb-4" style="color:#FFE0C0">Track your order, manage bookings and get exclusive app-only deals</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="btn btn-dark px-4 py-2 fw-bold">📲 App Store</button>
+          <button class="btn btn-dark px-4 py-2 fw-bold">▶️ Google Play</button>
+        </div>
+        <div class="app-features d-flex gap-4 mt-4 flex-wrap">
+          <span>📍 Live Tracking</span>
+          <span>🔔 Instant Alerts</span>
+          <span>💰 Exclusive Offers</span>
+          <span>📋 Order History</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <div class="phone-mockup">📱</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CITIES ===================== -->
+<section class="container text-center mt-5 pt-3">
+  <h2 class="fw-bold section-title">Now Serving in 20+ Cities</h2>
+  <p class="text-muted mb-4">Expanding every month — coming to your city soon!</p>
+  <div class="cities-wrap d-flex flex-wrap justify-content-center gap-3">
+    <span class="city-tag">Chennai</span>
+    <span class="city-tag">Mumbai</span>
+    <span class="city-tag">Delhi</span>
+    <span class="city-tag">Bangalore</span>
+    <span class="city-tag">Hyderabad</span>
+    <span class="city-tag">Pune</span>
+    <span class="city-tag">Coimbatore</span>
+    <span class="city-tag">Madurai</span>
+    <span class="city-tag">Kochi</span>
+    <span class="city-tag">Ahmedabad</span>
+    <span class="city-tag">Thoothukudi</span>
+    <span class="city-tag">Trichy</span>
+  </div>
+  <a href="#" class="btn btn-outline-warning mt-4 px-4">View All Cities →</a>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="container mt-5 pt-3 pb-4">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold section-title">What Our Customers Say</h2>
+    <p class="text-muted">Real reviews from real people</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <p>"I ran out of petrol on the highway at midnight. FuelGO reached me in 25 minutes. Absolute lifesaver!"</p>
+        <div class="stars">★★★★★</div>
+        <div class="reviewer">— Ravi K., Chennai</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <p>"The mechanic was professional and fixed my flat tyre in 20 minutes right outside my office. Amazing!"</p>
+        <div class="stars">★★★★★</div>
+        <div class="reviewer">— Priya S., Bangalore</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <p>"Booked an oil change from the app. Guy came on time, did a clean job, and the price was very fair."</p>
+        <div class="stars">★★★★☆</div>
+        <div class="reviewer">— Arjun M., Mumbai</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTNERS ===================== -->
+<section class="partners-section py-4">
+  <div class="container text-center">
+    <p class="text-muted mb-3 fw-semibold">TRUSTED PARTNERS & CERTIFICATIONS</p>
+    <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+      <span class="partner-badge">BPCL</span>
+      <span class="partner-badge">Indian Oil</span>
+      <span class="partner-badge">HP</span>
+      <span class="partner-badge">Castrol</span>
+      <span class="partner-badge">MRF</span>
+    </div>
+    <div class="d-flex justify-content-center gap-4 mt-3 flex-wrap">
+      <span class="cert-tag">✅ ISO Certified</span>
+      <span class="cert-tag">🛡️ Govt. Licensed</span>
+      <span class="cert-tag">🔧 ASDC Certified Mechanics</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG ===================== -->
+<section class="container mt-5 pb-4">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold section-title">Helpful Tips & Guides</h2>
+    <p class="text-muted">Stay informed about your vehicle</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="blog-card">
+        <div class="blog-thumb">⛽</div>
+        <div class="blog-body">
+          <span class="blog-tag">Fuel Tips</span>
+          <h6 class="fw-bold mt-2">What to Do When You Run Out of Fuel on the Highway</h6>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="blog-card">
+        <div class="blog-thumb">🔋</div>
+        <div class="blog-body">
+          <span class="blog-tag">Car Care</span>
+          <h6 class="fw-bold mt-2">5 Signs Your Car Battery is About to Die</h6>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="blog-card">
+        <div class="blog-thumb">🔧</div>
+        <div class="blog-body">
+          <span class="blog-tag">Maintenance</span>
+          <h6 class="fw-bold mt-2">How Often Should You Change Your Engine Oil?</h6>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-outline-warning px-4">Read All Articles →</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer-section pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="logo-text mb-2" style="font-size:1.8rem;">Fuel<span>GO</span></div>
+        <p style="color:#A0B0C8;font-size:0.9rem;">Your 24/7 roadside fuel and mechanic partner. Always on, always fast.</p>
+        <p style="color:#A0B0C8;font-size:0.9rem;">📞 1800-XXX-XXXX</p>
+        <p style="color:#A0B0C8;font-size:0.9rem;">📧 support@fuelgo.in</p>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="footer-heading">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#">Fuel Delivery</a></li>
+          <li><a href="#">Mechanic Services</a></li>
+          <li><a href="#">Vehicle Care</a></li>
+          <li><a href="#">Business & Fleet</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="footer-heading">Support</h6>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Cancel Booking</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr style="border-color:#1E2D45;margin-top:2rem;"/>
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 pb-2">
+      <p style="color:#666;font-size:0.85rem;margin:0;">© 2025 FuelGO. All Rights Reserved.</p>
+      <div class="social-icons d-flex gap-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
