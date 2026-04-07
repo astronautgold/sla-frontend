@@ -1,64 +1,195 @@
 <script>
-    
-let myname = [1,2,3,4,5,6 ]
-console.log(myname)
-let wumike =[4,5,6,7,8,9] 
-console.log(wumike)
-
-let perfink = ["my", "you" ]
- console.log(perfink)
-
-let fingertip = ["tell", "Name" ]
- console.log (fingertip)
-
-let bodywash = [1,2,3,4,5,6] 
-console.log(boywash)
-
-let Notebook=["blue", "Red", "yellow"]
-console.log (Notebook )
-
-let mystory = [" Japan", "Meyanmar"]
- console.log(mystory)
-
-let myame =["Ramyo", "Jana"]
-console.log(myame) 
-let Chargepoint =["pin", "paper" ]
- console.log(Chargepoint)
-
-let myjourney = ["IndPa","USA", "VIK"] 
-console.log(myjourney)
-
-let notepaper= [[1,2], [2,3]
-                 [1,2], [2,3]]
-
-console.log (notepaper[0])
+    console.log("===== START PROGRAM =====");
 
 
-
-let thinkpad=[["Mon", "tues"],
-["wed, "hw"]]
- console.log (thinkpad)
-
-
-
-
-
-let thinkmemory= [[1,2], [4,5],
-[6,7][8,9]]
- console.log (thinkmemory) 
-
+// 🔹 1. Argument & Parameter (10)
+function printNum(aValue) { console.log("printNum:", aValue); } printNum(1);
+function addNums(aValue, bValue) { console.log("addNums:", aValue + bValue); } addNums(2,3);
+function showName(userName) { console.log("showName:", userName); } showName("Ramya");
+function squareNum(numValue) { console.log("squareNum:", numValue * numValue); } squareNum(4);
+function sumTotal(aNum, bNum, cNum) { console.log("sumTotal:", aNum + bNum + cNum); } sumTotal(1,2,3);
+function printAge(userAge) { console.log("printAge:", userAge); } printAge(21);
+function showCity(userCity) { console.log("showCity:", userCity); } showCity("Chennai");
+function multiplyNum(numValue) { console.log("multiplyNum:", numValue * 10); } multiplyNum(5);
+function subtractNum(aNum, bNum) { console.log("subtractNum:", aNum - bNum); } subtractNum(10,5);
+function printMsg(userMsg) { console.log("printMsg:", userMsg); } printMsg("Hello");
 
 
-Let [mobile," "Note"]] penpaper [["ead","paper"), consob.log [penpaper)
+// 🔹 2. Object (15)
+let userOne = {firstName:"A", userAge:20};
+let userTwo = {firstName:"B", userAge:21};
+let cityData = {cityName:"Chennai"};
+let courseInfo = {courseName:"IT"};
+let marksData = {mathMark:90};
+let valuePair = {aValue:1, bValue:2};
+let xValue = {xValue:10};
+let yValue = {yValue:20};
+let zValue = {zValue:30};
+let langInfo = {langName:"JS"};
+let collegeInfo = {collegeName:"XYZ"};
+let deptInfo = {deptName:"CSE"};
+let phoneData = {phoneNum:12345};
+let emailData = {emailId:"test@mail"};
+let statusInfo = {statusFlag:true};
 
-Let mobileiave = [["mobile","Nokia"], Console.log [mobile] [Vivo, "Redmi
-
-Let Fingertip [["NORI", "Nose"], consob. log [Fingertip) Ipen", "paper
-
-Let Laptop = [["MSI", "Mac"], console.log Laptop) "Sumsung", "hp"]
-
-Let phonecase = [["Moden", "plain"), osob.log ['designed", "Model" [phonecase)
+console.log("All Objects:");
+console.log(userOne, userTwo, cityData, courseInfo, marksData, valuePair,
+            xValue, yValue, zValue, langInfo, collegeInfo, deptInfo,
+            phoneData, emailData, statusInfo);
 
 
+// 🔹 3. Nested Object (15)
+let studentData = {userName:"A", marksData:{mathMark:90}};
+let studentInfo = {userName:"B", marksData:{engMark:80}};
+let userData = {userInfo:{userId:1}};
+let valueData = {aValue:{bValue:2}};
+let deepData = {xValue:{yValue:{zValue:3}}};
+let carInfo = {carData:{carBrand:"BMW"}};
+let bookInfo = {bookData:{bookTitle:"JS"}};
+let empData = {empInfo:{empSalary:5000}};
+let studentGrade = {studentData:{gradeValue:"A"}};
+let dataValue = {mainData:{valueNum:100}};
+let outerData = {outerInfo:{innerValue:1}};
+let tripleData = {oneData:{twoData:{threeValue:3}}};
+let profileData = {profileInfo:{userName:"Ramya"}};
+let addressData = {addressInfo:{cityName:"Chennai"}};
+let detailsData = {detailsInfo:{userAge:21}};
 
+console.log("Nested Access:");
+console.log(studentData.marksData.mathMark);
+console.log(deepData.xValue.yValue.zValue);
+console.log(carInfo.carData.carBrand);
+
+
+// 🔹 4. Functions (15)
+function printOne(){console.log("1");} printOne();
+function printTwo(){console.log("2");} printTwo();
+function printThree(){console.log("3");} printThree();
+function returnFour(){console.log("4");} returnFour();
+function returnFive(){console.log("5");} returnFive();
+function greetUser(){console.log("Hi");} greetUser();
+function showText(){console.log("Text");} showText();
+function addValues(){console.log(2+3);} addValues();
+function subValues(){console.log(5-2);} subValues();
+function mulValues(){console.log(2*3);} mulValues();
+function divValues(){console.log(6/2);} divValues();
+function printHello(){console.log("Hello");} printHello();
+function showData(){console.log("Data");} showData();
+function logInfo(){console.log("Info");} logInfo();
+function testFunc(){console.log("Test");} testFunc();
+
+
+// 🔹 5. Anonymous Functions (15)
+let funcOne = function(){console.log("Anon 1");}; funcOne();
+let funcTwo = function(){console.log("Anon 2");}; funcTwo();
+let funcThree = function(){console.log("Anon 3");}; funcThree();
+let funcFour = function(){console.log("Anon 4");}; funcFour();
+let funcFive = function(){console.log("Anon 5");}; funcFive();
+let funcSix = function(){console.log("Anon 6");}; funcSix();
+let funcSeven = function(){console.log("Anon 7");}; funcSeven();
+let funcEight = function(){console.log("Anon 8");}; funcEight();
+let funcNine = function(){console.log("Anon 9");}; funcNine();
+let funcTen = function(){console.log("Anon 10");}; funcTen();
+let funcEleven = function(){console.log("Anon 11");}; funcEleven();
+let funcTwelve = function(){console.log("Anon 12");}; funcTwelve();
+let funcThirteen = function(){console.log("Anon 13");}; funcThirteen();
+let funcFourteen = function(){console.log("Anon 14");}; funcFourteen();
+let funcFifteen = function(){console.log("Anon 15");}; funcFifteen();
+
+
+// 🔹 6. Arrow Functions (20)
+let arrowOne = () => console.log("Arrow 1"); arrowOne();
+let arrowTwo = () => console.log("Arrow 2"); arrowTwo();
+let arrowThree = () => console.log("Arrow 3"); arrowThree();
+let arrowFour = () => console.log("Arrow 4"); arrowFour();
+let arrowFive = () => console.log("Arrow 5"); arrowFive();
+let arrowSix = () => console.log("Arrow 6"); arrowSix();
+let arrowSeven = () => console.log("Arrow 7"); arrowSeven();
+let arrowEight = () => console.log("Arrow 8"); arrowEight();
+let arrowNine = () => console.log("Arrow 9"); arrowNine();
+let arrowTen = () => console.log("Arrow 10"); arrowTen();
+let arrowEleven = () => console.log("Arrow 11"); arrowEleven();
+let arrowTwelve = () => console.log("Arrow 12"); arrowTwelve();
+let arrowThirteen = () => console.log("Arrow 13"); arrowThirteen();
+let arrowFourteen = () => console.log("Arrow 14"); arrowFourteen();
+let arrowFifteen = () => console.log("Arrow 15"); arrowFifteen();
+let arrowSixteen = () => console.log("Arrow 16"); arrowSixteen();
+let arrowSeventeen = () => console.log("Arrow 17"); arrowSeventeen();
+let arrowEighteen = () => console.log("Arrow 18"); arrowEighteen();
+let arrowNineteen = () => console.log("Arrow 19"); arrowNineteen();
+let arrowTwenty = () => console.log("Arrow 20"); arrowTwenty();
+
+
+// 🔹 7. Arrays (30)
+let arrayOne = [1,2,3]; console.log(arrayOne);
+let arrayTwo = [4,5,6]; console.log(arrayTwo);
+let arrayThree = ["A","B","C"]; console.log(arrayThree);
+let arrayFour = [true,false]; console.log(arrayFour);
+let arrayFive = [10,20,30]; console.log(arrayFive);
+
+console.log("Index:", arrayOne[0]);
+
+let arraySix = [[1,2],[3,4]]; console.log(arraySix);
+console.log("2D Access:", arraySix[0][1]);
+
+// remaining arrays
+let arraySeven = [7,8,9]; console.log(arraySeven);
+let arrayEight = [11,12,13]; console.log(arrayEight);
+let arrayNine = [14,15,16]; console.log(arrayNine);
+let arrayTen = [17,18,19]; console.log(arrayTen);
+let arrayEleven = [20,21,22]; console.log(arrayEleven);
+let arrayTwelve = [23,24,25]; console.log(arrayTwelve);
+let arrayThirteen = [26,27,28]; console.log(arrayThirteen);
+let arrayFourteen = [29,30,31]; console.log(arrayFourteen);
+let arrayFifteen = [32,33,34]; console.log(arrayFifteen);
+let arraySixteen = [35,36,37]; console.log(arraySixteen);
+let arraySeventeen = [38,39,40]; console.log(arraySeventeen);
+let arrayEighteen = [41,42,43]; console.log(arrayEighteen);
+let arrayNineteen = [44,45,46]; console.log(arrayNineteen);
+let arrayTwenty = [47,48,49]; console.log(arrayTwenty);
+let arrayTwentyOne = [50,51,52]; console.log(arrayTwentyOne);
+let arrayTwentyTwo = [53,54,55]; console.log(arrayTwentyTwo);
+let arrayTwentyThree = [56,57,58]; console.log(arrayTwentyThree);
+let arrayTwentyFour = [59,60,61]; console.log(arrayTwentyFour);
+let arrayTwentyFive = [62,63,64]; console.log(arrayTwentyFive);
+let arrayTwentySix = [65,66,67]; console.log(arrayTwentySix);
+let arrayTwentySeven = [68,69,70]; console.log(arrayTwentySeven);
+let arrayTwentyEight = [71,72,73]; console.log(arrayTwentyEight);
+let arrayTwentyNine = [74,75,76]; console.log(arrayTwentyNine);
+let arrayThirty = [77,78,79]; console.log(arrayThirty);
+
+
+// 🔹 8. Array of Objects (3 × 5)
+let studentsOne = [
+  {name:"A", age:20},
+  {name:"B", age:21},
+  {name:"C", age:22},
+  {name:"D", age:23},
+  {name:"E", age:24}
+];
+
+let studentsTwo = [
+  {name:"F", age:25},
+  {name:"G", age:26},
+  {name:"H", age:27},
+  {name:"I", age:28},
+  {name:"J", age:29}
+];
+
+let studentsThree = [
+  {name:"K", age:30},
+  {name:"L", age:31},
+  {name:"M", age:32},
+  {name:"N", age:33},
+  {name:"O", age:34}
+];
+
+console.log("Students 1:", studentsOne);
+console.log("Students 2:", studentsTwo);
+console.log("Students 3:", studentsThree);
+
+console.log("Access Example:", studentsOne[0].name);
+
+
+console.log("===== END PROGRAM =====");
 </script>
