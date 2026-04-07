@@ -1,0 +1,136 @@
+<script>
+   
+// map() TASKS
+
+
+// 1️⃣ Double Values
+let m1 = [1, 2, 3, 4];
+console.log("Double:", m1.map(n => n * 2));
+
+// 2️⃣ Convert to String
+let m2 = [1, 2, 3];
+console.log("To String:", m2.map(n => n.toString()));
+
+// 3️⃣ Add Prefix
+let m3 = ["apple", "banana"];
+console.log("Prefix:", m3.map(f => "fruit: " + f));
+
+
+
+// filter() TASKS
+
+
+// 4️⃣ Even Numbers
+let f1 = [1, 2, 3, 4, 5, 6];
+console.log("Even:", f1.filter(n => n % 2 === 0));
+
+// 5️⃣ Greater Than 50
+let f2 = [10, 60, 30, 80];
+console.log(">50:", f2.filter(n => n > 50));
+
+// 6️⃣ Filter Names
+let f3 = ["Ram", "Ravi", "John"];
+console.log("Starts with R:", f3.filter(name => name.startsWith("R")));
+
+
+
+// find() TASKS
+
+
+// 7️⃣ First Greater Value
+let fd1 = [10, 20, 30, 40];
+console.log("First >25:", fd1.find(n => n > 25));
+
+// 8️⃣ Find User
+let users = [
+    { name: "Ram", age: 20 },
+    { name: "Ravi", age: 30 },
+    { name: "John", age: 28 }
+];
+console.log("User age >25:", users.find(u => u.age > 25));
+
+
+// reduce() TASKS
+
+
+// 9️⃣ Sum of Numbers
+let r1 = [1, 2, 3, 4];
+console.log("Sum:", r1.reduce((acc, n) => acc + n, 0));
+
+// 🔟 Find Maximum
+let r2 = [10, 50, 20, 80];
+console.log("Max:", r2.reduce((max, n) => n > max ? n : max));
+
+// 1️⃣1️⃣ Count Total
+let r3 = [5, 5, 5];
+console.log("Total:", r3.reduce((acc, n) => acc + n, 0));
+
+
+
+// some() TASKS
+
+
+// 1️⃣2️⃣ Check Even Exists
+let s1 = [1, 3, 5, 6];
+console.log("Any Even:", s1.some(n => n % 2 === 0));
+
+// 1️⃣3️⃣ Age Check
+console.log("Any <18:", users.some(u => u.age < 18));
+
+
+// every() TASKS
+
+
+// 1️⃣4️⃣ All Even Check
+let e1 = [2, 4, 6];
+console.log("All Even:", e1.every(n => n % 2 === 0));
+
+// 1️⃣5️⃣ All Passed
+let marks = [50, 60, 70];
+console.log("All Passed:", marks.every(m => m > 40));
+
+
+// forEach() TASKS
+
+
+// 1️⃣6️⃣ Print Values
+let fe1 = [10, 20, 30];
+fe1.forEach(n => console.log("Value:", n));
+
+// 1️⃣7️⃣ Sum Using forEach
+let fe2 = [1, 2, 3, 4];
+let sum = 0;
+fe2.forEach(n => sum += n);
+console.log("Sum (forEach):", sum);
+
+
+
+// 🔥 REAL-TIME TASKS
+
+
+// Sample Data
+let products = [
+    { name: "Phone", price: 15000 },
+    { name: "Charger", price: 500 },
+    { name: "Laptop", price: 60000 }
+];
+
+let users2 = [
+    { name: "Ram", age: 20 },
+    { name: "Ravi", age: 30 }
+];
+
+let cart = [
+    { item: "Pen", price: 10 },
+    { item: "Book", price: 100 }
+];
+
+// 1️⃣8️⃣ Product Filter
+console.log("Price >1000:", products.filter(p => p.price > 1000));
+
+// 1️⃣9️⃣ User Names
+console.log("User Names:", users2.map(u => u.name));
+
+// 2️⃣0️⃣ Total Price
+console.log("Cart Total:", cart.reduce((acc, item) => acc + item.price, 0));
+</script>

@@ -1,0 +1,94 @@
+<script>
+  
+// ES6 TASKS
+
+// 1️⃣ Arrow Function
+const add = (a, b) => a + b;
+console.log("Arrow Add:", add(5, 3));
+
+
+// 2️⃣ let & const
+let x = 10;
+const y = 20;
+
+x = 15; //  allowed
+// y = 25;  error (cannot reassign const)
+
+console.log("let:", x);
+console.log("const:", y);
+
+
+// 3️⃣ Template Literals
+let name = "Rere";
+let age = 25;
+console.log(`Hello ${name}, your age is ${age}`);
+
+
+// 4️⃣ Default Parameter
+function greet(user = "Guest") {
+    console.log("Hello " + user);
+}
+greet();
+greet("Ramya");
+
+
+// 5️⃣ Ternary Operator
+let num = 7;
+console.log(num % 2 === 0 ? "Even" : "Odd");
+
+
+// 6️⃣ Array Destructuring
+let arr = [10, 20, 30];
+let [a, b] = arr;
+console.log("Destructuring:", a, b);
+
+
+// 7️⃣ Object Destructuring
+let obj = { name1: "Rere", age1: 25 };
+let { name1, age1 } = obj;
+console.log("Object:", name1, age1);
+
+
+// 8️⃣ Spread Operator (Array)
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let merged = [...arr1, ...arr2];
+console.log("Merged Array:", merged);
+
+
+// 9️⃣ Spread Operator (Object)
+let person = { name: "Rere", age: 25 };
+let updatedPerson = { ...person, city: "Chennai" };
+console.log("Updated Object:", updatedPerson);
+
+
+// 🔟 Rest Operator (Function)
+function sum(...numbers) {
+    return numbers.reduce((acc, n) => acc + n, 0);
+}
+console.log("Rest Sum:", sum(1, 2, 3, 4));
+
+
+// 1️⃣1️⃣ Rest with Destructuring
+let nums = [1, 2, 3, 4];
+let [first, ...rest] = nums;
+console.log("First:", first);
+console.log("Rest:", rest);
+
+
+// 1️⃣2️⃣ Optional Chaining
+let user = {};
+console.log("Optional:", user?.name);
+
+
+// 1️⃣3️⃣ Nullish Coalescing
+let value = null;
+console.log("Nullish:", value ?? "Default Value");
+
+
+// 1️⃣4️⃣ Short Property
+let n = "Rere";
+let a2 = 25;
+let shortObj = { n, a2 };
+console.log("Short Object:", shortObj);
+</script>

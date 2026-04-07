@@ -1,0 +1,153 @@
+<script>
+    
+// CALLBACK TASKS
+
+
+// 1️⃣ Simple Callback Execution
+function process(callback) {
+    callback();
+}
+process(() => console.log("Callback executed"));
+
+
+// 2️⃣ Add Using Callback
+function calculate(a, b, callback) {
+    return callback(a, b);
+}
+function add(x, y) {
+    return x + y;
+}
+console.log("Sum:", calculate(5, 3, add));
+
+
+// 3️⃣ Multiply Using Callback
+function calc(a, b, callback) {
+    console.log("Multiply:", callback(a, b));
+}
+calc(4, 5, (x, y) => x * y);
+
+
+// 4️⃣ Even Check Callback
+function check(num, callback) {
+    callback(num);
+}
+check(6, (n) => {
+    console.log(n % 2 === 0 ? "Even" : "Odd");
+});
+
+
+// 5️⃣ Greeting Callback
+function greet(name, callback) {
+    callback(name);
+}
+greet("Ramya", (n) => console.log("Welcome " + n));
+
+
+// 6️⃣ Array Callback (forEach)
+let arr = [10, 20, 30];
+arr.forEach((value) => console.log("Array value:", value));
+
+
+// 7️⃣ Filter Callback
+let nums = [1, 2, 3, 4, 5];
+let even = nums.filter((n) => n % 2 === 0);
+console.log("Even numbers:", even);
+
+
+// CLOSURE TASKS
+
+// 8️⃣ Simple Counter
+function counter() {
+    let count = 0;
+    return function () {
+        count++;
+        console.log("Counter:", count);
+    };
+}
+let c = counter();
+c();
+c();
+
+
+// 9️⃣ Private Variable
+function secretValue() {
+    let secret = 100;
+    return function () {
+        console.log("Secret:", secret);
+    };
+}
+let show = secretValue();
+show();
+
+
+// 🔟 Add Closure
+function addClosure(a) {
+    return function (b) {
+        return a + b;
+    };
+}
+console.log("Add Closure:", addClosure(5)(10));
+
+
+// 1️⃣1️⃣ Multiply Closure
+function multiply(a) {
+    return function (b) {
+        return a * b;
+    };
+}
+console.log("Multiply Closure:", multiply(5)(2));
+
+
+// 1️⃣2️⃣ Message Closure
+function message(msg) {
+    return function () {
+        console.log("Message:", msg);
+    };
+}
+let m = message("Hello!");
+m();
+
+
+// 1️⃣3️⃣ User Login Closure
+function user(name) {
+    return function () {
+        console.log("User " + name + " logged in");
+    };
+}
+let login = user("Ramya");
+login();
+
+
+// 1️⃣4️⃣ Counter with Reset
+function counterWithReset() {
+    let count = 0;
+    return {
+        increment: function () {
+            count++;
+            console.log("Count:", count);
+        },
+        reset: function () {
+            count = 0;
+            console.log("Reset to 0");
+        }
+    };
+}
+let c2 = counterWithReset();
+c2.increment();
+c2.increment();
+c2.reset();
+
+
+// 1️⃣5️⃣ Data Storage Closure
+function storage() {
+    let data = [];
+    return function (value) {
+        data.push(value);
+        console.log("Stored Data:", data);
+    };
+}
+let store = storage();
+store(10);
+store(20);
+store(30);
+</script>
