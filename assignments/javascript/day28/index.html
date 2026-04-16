@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colors input</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div>
+      <input id="text" placeholder="enter your color" class="m-4 bg-gray-200"/>
+      <p class="m-4">For example colors : red,yellow,blue</p>
+      <button onclick = "btn()" class="m-4 bg-sky-200 rounded-lg p-2">Click</button>
+      <p id="para" border="1" class="w-40 m-3 rounded text-white text-center"></p>
+    </div>
+    <!--//button count increase when clicked-->
+
+    <div>
+      <button onclick="count()" class="m-4 bg-sky-200 rounded-lg p-2">count</button>
+      <p id="incre" class="m-4">0</p>
+    </div>
+    <!--password hide and show-->
+    <div>
+      <input type="password" id="pass" placeholder="enter your password">
+      <button onclick="toggle()" class="m-4 bg-sky-200 rounded-lg p-2">click</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
