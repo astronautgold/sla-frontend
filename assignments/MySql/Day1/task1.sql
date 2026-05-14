@@ -1,0 +1,31 @@
+CREATE database college_db;
+use college_db;
+CREATE TABLE students (id INT,
+name varchar(20),
+age INT,
+course varchar(20));
+
+
+
+CREATE TABLE employees (id  INT primary KEY,
+name varchar(20)  NOT NULL,
+age INT,
+EMAIL varchar(20) UNIQUE);
+ALTER TABLE employees ADD ADDRESS VARCHAR(20);
+ALTER TABLE employees DROP ADDRESS ;
+ALTER TABLE employees ADD department VARCHAR(20);
+
+CREATE TABLE DEPARTMENT (DEPT_ID INT,NAME VARCHAR(20) ,FOREIGN KEY (DEPT_ID) REFERENCES employees(id));
+CREATE TABLE auto(ID INT PRIMARY KEY AUTO_INCREMENT,SALARY int DEFAULT 25000);
+ALTER TABLE auto DROP PRIMARY KEY;
+
+ALTER TABLE auto ADD mobile_number INT;
+ALTER TABLE auto ADD EMAIL VARCHAR(20);
+CREATE TABLE pro (NAME VARCHAR(20),PRICE INT CHECK(PRICE>100));
+INSERT INTO pro   VALUES ("LIPSTICK","150"),("NAILPOLOSH","928"),("FORK","800"),("MAKEUPKIT","350");
+
+ALTER TABLE students RENAME TO college_students;
+
+ALTER TABLE  college_students RENAME COLUMN  name  TO student_name;
+
+ALTER TABLE auto MODIFY mobile_number VARCHAR(15);
