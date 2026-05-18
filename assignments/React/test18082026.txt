@@ -1,0 +1,57 @@
+1. What is React?
+
+React is a JavaScript library used to build user interfaces.
+It helps create reusable and fast UI components.
+
+2. Is React a library or framework?
+
+React is a library, not a framework.
+It mainly focuses on building UI.
+
+3. What are the key features of React?
+
+React has reusable components, Virtual DOM, JSX, and fast rendering.
+It also supports one-way data binding.
+
+4. What is Single Page Application (SPA)?
+
+SPA loads a single HTML page and updates content dynamically.
+It gives faster user experience without page reload.
+
+5. What is a component in React?
+
+A component is a reusable piece of UI.
+It helps split the application into smaller parts.
+
+6. What are functional components?
+
+Functional components are JavaScript functions that return JSX.
+They are simple and mainly use hooks.
+
+7. What is JSX?
+
+JSX means JavaScript XML.
+It allows writing HTML inside JavaScript.
+
+8. Can browsers understand JSX directly?
+
+No, browsers cannot understand JSX directly.
+JSX must be converted into JavaScript using Babel.
+
+9. What is Babel in React?
+
+Babel is a JavaScript compiler.
+It converts JSX into normal JavaScript code.
+
+10. What is Virtual DOM?
+
+Virtual DOM is a lightweight copy of the real DOM.
+React updates only changed elements for better performance.
+
+🟢 Component & Props Questions
+11. Difference between functional and class components?
+Functional Component	Class Component
+Uses functions	Uses classes
+Uses hooks	Uses lifecycle methods
+Simpler and faster	More complex
+Mostly used now	Less commonly used
