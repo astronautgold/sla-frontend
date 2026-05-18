@@ -1,0 +1,55 @@
+1. Difference between var, let, const?
+
+var is function scoped, let is block scoped, and const cannot be reassigned.
+In my project, I mostly used const for fixed values and let for changing values like form data.
+
+2. What is an event in JavaScript?
+
+An event is an action like button click, typing, or form submit.
+I handled events using onClick and onSubmit in forms and buttons.
+
+3. What is localStorage?
+
+localStorage stores data permanently in the browser.
+I used it to save login/register details and invoice data.
+
+4. Synchronous vs Asynchronous JavaScript?
+
+Synchronous runs line by line, asynchronous runs without blocking other tasks.
+I used async operations while fetching API data in my project.
+
+5. map() vs forEach()?
+
+map() returns a new array, while forEach() only loops through items.
+I used map() for rendering tables/cards dynamically in React.
+
+React – Project Basic Questions
+6. What is React and why use it?
+
+React is a library for building user interfaces.
+I used it because it supports reusable components and faster UI updates.
+
+7. What is useState?
+
+useState is a React hook used to store and update data.
+I used it for form inputs, invoice data, dark mode, and API data.
+
+8. What is a controlled component?
+
+A controlled component is an input controlled by React state.
+I handled form inputs using useState and onChange.
+
+9. How did you pass data between components?
+
+I passed data using props from parent component to child component.
+Props helped share invoice and client details between pages/components.
+
+10. Assignment
+
+Build a simple Invoice Generator using React with:
+
+Form handling
+Dynamic invoice table
+Total calculation
+localStorage
+Routing using React Router
