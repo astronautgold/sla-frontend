@@ -1,0 +1,65 @@
+1. var, let, const
+
+var can redeclare and reassign, let can reassign only, const cannot change.
+let and const are block scoped, var is function scoped.
+
+2. Truthy and Falsy:
+
+Falsy values: false, 0, "", null, undefined, NaN.
+All other values are mostly truthy like "hello", 1, [].
+
+3. Hoisting
+
+Hoisting moves declarations to the top before execution.
+var becomes undefined, while let and const stay in TDZ.
+
+4. == vs ===
+
+== checks only value.
+=== checks value and datatype.
+
+5. Callback Function
+
+A callback is a function passed into another function.
+It runs after another function completes.
+
+6. map() vs forEach()
+
+map() returns a new array.
+forEach() only loops through the array.
+
+7. Arrow Function
+
+Arrow function is a shorter way to write functions.
+It does not have its own this.
+
+
+8. What is React?
+
+React is a JavaScript library for building user interfaces.
+It helps create fast and reusable UI components.
+
+9. What is JSX?
+
+JSX allows writing HTML inside JavaScript.
+Browsers cannot understand JSX directly without Babel.
+
+10. Props vs State
+
+Props are passed from parent components.
+State is managed inside the component and can change.
+
+11. useState Hook
+
+useState is used to store and update state in functional components.
+It causes re-render when state changes.
+
+12. useEffect Hook
+
+useEffect is used for API calls and side effects.
+It runs after component rendering.
+
+13. Virtual DOM
+
+Virtual DOM is a lightweight copy of the real DOM.
+React updates only changed parts for better performance.

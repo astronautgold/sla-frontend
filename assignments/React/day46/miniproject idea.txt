@@ -1,0 +1,13 @@
+Quotation & Invoice Generator – Project Overview 
+
+The Quotation & Invoice Generator is a web application developed for freelancers, small businesses, and shop owners to create professional quotations, bills, and invoices for clients digitally. The main purpose of the project is to simplify the billing process and reduce manual paperwork.
+
+The system allows users to:
+
+Create quotations and invoices
+Add client details
+Add products/services with price and quantity
+Automatically calculate subtotal, tax, and total amount
+Download or print invoices
+Store billing history
+Manage client records
