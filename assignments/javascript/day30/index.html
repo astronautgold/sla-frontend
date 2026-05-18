@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+
+<body>
+
+  <h1>Login</h1>
+
+  <form onsubmit="login(event)">
+
+    <input 
+      type="email" 
+      id="email" 
+      placeholder="Enter Email"
+    >
+
+    <br><br>
+
+    <input 
+      type="password" 
+      id="password" 
+      placeholder="Enter Password"
+    >
+
+    <br><br>
+
+    <button type="submit">
+      Login
+    </button>
+
+  </form>
+
+  <script>
+
+    function login(event) {
+
+      event.preventDefault();
+
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      if (email === "admin@gmail.com" && password === "1234") {
+
+        alert("Login Success");
+
+        window.location.href = "dashboard.html";
+
+      } else {
+
+        alert("Invalid Email or Password");
+
+      }
+    }
+
+  </script>
+
+</body>
+</html>
