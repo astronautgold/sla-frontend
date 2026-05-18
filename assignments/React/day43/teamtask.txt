@@ -1,0 +1,74 @@
+1. What is React?
+
+React is a JavaScript library used for building user interfaces.
+It helps create reusable UI components.
+
+2. What is JSX?
+
+JSX allows writing HTML inside JavaScript.
+Browsers cannot understand JSX directly.
+
+3. What is useState?
+
+useState is a React hook used to store state.
+It updates UI when value changes.
+
+4. What is useEffect?
+
+useEffect is used for side effects like API calls.
+It runs after rendering.
+
+5. What are props?
+
+Props are used to pass data from parent to child component.
+Props are read-only.
+
+6. What is state?
+
+State stores dynamic data inside a component.
+Changing state re-renders the component.
+
+7. What is Virtual DOM?
+
+Virtual DOM is a copy of the real DOM.
+React updates only changed elements for better performance.
+
+8. Why use key in map()?
+
+Keys identify elements uniquely in lists.
+They improve rendering performance.
+
+9. Difference between map() and forEach()?
+
+map() returns a new array.
+forEach() only loops through elements.
+
+10. What is conditional rendering?
+
+Conditional rendering shows UI based on conditions.
+Usually done using if or ternary operator.
+
+11. What is React Router?
+
+React Router is used for page navigation in React apps.
+It creates routing without page reload.
+
+12. What is lifting state up?
+
+Sharing state between components through parent component.
+Parent manages common state.
+
+13. What is form handling in React?
+
+Form handling manages input values using state.
+Used for login, register, and forms.
+
+14. What is localStorage?
+
+localStorage stores data permanently in browser.
+Data remains even after refresh.
+
+15. What is useRef?
+
+useRef is used to access DOM elements directly.
+It stores mutable values without re-rendering.
