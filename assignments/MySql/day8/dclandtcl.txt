@@ -1,0 +1,83 @@
+What is DCL?
+
+DCL stands for Data Control Language.
+It is used to control access and permissions in a database.
+
+DCL Commands
+GRANT → Gives permission to users
+REVOKE → Removes permission from users
+Example
+-- Give SELECT permission to user
+
+GRANT SELECT
+ON students
+TO user1;
+
+-- Remove SELECT permission
+
+REVOKE SELECT
+ON students
+FROM user1;
+
+What is TCL?
+
+TCL stands for Transaction Control Language.
+It is used to manage transactions in the database.
+
+TCL Commands
+COMMIT → Saves changes permanently
+ROLLBACK → Undo changes
+SAVEPOINT → Creates a point to rollback
+SET TRANSACTION → Sets transaction properties
+Example
+START TRANSACTION;
+
+INSERT INTO students VALUES (1,'Ram',90);
+
+SAVEPOINT s1;
+
+INSERT INTO students VALUES (2,'Priya',85);
+
+ROLLBACK TO s1;
+
+COMMIT;
+DCL Comments
+-- DCL : Data Control Language
+
+-- GRANT command gives permission to users
+
+GRANT SELECT, INSERT
+ON students
+TO user1;
+
+-- REVOKE command removes permission
+
+REVOKE INSERT
+ON students
+FROM user1;
+TCL Comments
+-- TCL : Transaction Control Language
+
+-- Start transaction
+
+START TRANSACTION;
+
+-- Insert record
+
+INSERT INTO students VALUES (3,'Arun',80);
+
+-- Save current point
+
+SAVEPOINT s1;
+
+-- Insert another record
+
+INSERT INTO students VALUES (4,'Divya',95);
+
+-- Undo changes after savepoint
+
+ROLLBACK TO s1;
+
+-- Save changes permanently
+
+COMMIT;
